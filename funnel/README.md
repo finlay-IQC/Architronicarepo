@@ -4,12 +4,15 @@ Static HTML/CSS/JS. Upload the whole `funnel/` folder to any host (GHL custom co
 
 ```
 /funnel
-  landing.html     Cold-traffic landing page (form sits directly under the hero)
+  landing.html     Live landing page (v2 design: form directly under the hero)
+  site.css         Styles for landing.html
+  main.js          UTM capture/pass-through, form loader, floating mobile CTA for landing.html
+  landing-v1.html  Previous design, kept for rollback (uses styles.css + script.js)
   thank-you.html   Post-form "we'll call you" page (conversion event goes here)
-  privacy.html     Placeholder privacy policy — complete before launch
-  terms.html       Placeholder terms — complete before launch
-  styles.css       All styling
-  script.js        UTM capture/pass-through, form loader, sticky CTA, FAQ, redirect helper
+  privacy.html     Placeholder privacy policy, complete before launch
+  terms.html       Placeholder terms, complete before launch
+  styles.css       Styles for thank-you, privacy, terms and landing-v1
+  script.js        Scripts for thank-you, privacy, terms and landing-v1
   images/          Client project photos, compressed for web
 ```
 
