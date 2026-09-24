@@ -25,6 +25,7 @@ already on 4 pages.
 - A5  Photo framed with a 16–24px inset border of brand colour, text left over a bottom scrim
 - A6  Full-bleed photo, dark overlay, text left-aligned and vertically centred
 - A7  No photo / text-only hero. DO NOT USE for client funnels (breaks the photo-hero rule)
+- A8  Form in the hero: copy left + form card right over the photo (desktop); short copy then form on mobile
 
 Every usable option keeps a real photo as at least 50% of the hero.
 
@@ -150,7 +151,7 @@ Taken from each repo's code on 2026-09-24. "Live" means the latest repo for that
 | 5 | Capital Refurbishment, commercial | capitalrefurbscommercial | A1 | B1 Inter | C4 ink #14161a + orange #f26522 | D1 | E1 | F6 | G4 | H2 | I0 | J1 | K1 | L1 | Book Your Free Project Quote | M1 | M5 | N1 | P1 (six sectors) |
 | 6 | Sintons Projects | sintonsrepo | A1 | B2 serif headings + Arial | C2 sage #888b79 / taupe #6f6656 | D1 | E1 | F4 | G1 | H1 | I1+I3 | J1 | K1 | L1 | Book Your Free Site Visit | M1 | M5 | N1 | – |
 | 7 | Architronica v1 (retired, kept as backup) | Architronicarepo /funnel/landing-v1.html | A1 | B1 Helvetica stack | C1 black / white | D1 | E1 | F1 | G1 | H1 | I1+I3 | J1 | K1 | L1 | Book Your Free Project Quote | M1 | M5 | N1 | – |
-| 8 | Architronica v2 (live) | Architronicarepo /funnel/landing.html | A2 | B2 Fraunces + system sans | C1 black / white | D2 | E2 | F2 | G2 | H2 | I2 | J2 | K3 | L2 | Book Your Free Project Quote | M3 | M6 | N2 | – |
+| 8 | Architronica v2 (live) | Architronicarepo /funnel/landing.html | A8 | B2 Fraunces + system sans | C1 black / white | D2 | E2 | F2 | G2 | H2 | I2 | J2 | K3 | L2 | Book Your Free Project Quote | M3 | M6 | N2 | – |
 | 9 | Kovacs, July rebuild (check if live) | Kovacreponew | A6 | B2 Fraunces + sans | C4 black + forest #33473B | D1 | E1 | F1 | G1 | H1 | I2 | J1 | K2 | L1 | Book Your Free Project Consultation | M1 | M5 | form at bottom | – |
 | 10 | Kovacs, first draft (check if live) | KovacRepo | A7 | B1 | C2 navy #2b3a4a | D2 | E1 | F7 | G4 | H5 | placeholders | J1 | K2 | L1 | Book Your Free Project Consultation | M1 | M5 | N1 | P3 |
 
