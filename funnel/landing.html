@@ -27,18 +27,46 @@
   </header>
 
   <main>
-    <!-- Hero: photo-led, copy anchored bottom-left, trust bar on the lower edge -->
+    <!-- Hero: photo-led, copy left, quote form right (above the fold); trust bar on the lower edge -->
     <section class="arc-hero" id="arc-top">
       <picture>
         <source media="(max-width: 767px)" srcset="images/extension-living.jpg">
         <img class="arc-hero__img" src="images/kitchen-island.jpg" alt="Finished kitchen with island and herringbone floor" width="1600" height="757" fetchpriority="high">
       </picture>
       <div class="arc-hero__inner">
-        <p class="arc-kicker arc-kicker--light">For homeowners and developers across London &amp; Essex</p>
-        <h1 class="arc-hero__h">Your renovation, built right. On time and on budget.</h1>
-        <p class="arc-hero__p">Extensions, loft conversions, full refurbishments and new builds, designed and built by one team.</p>
-        <a class="arc-btn arc-to-quote" href="#arc-quote">Book Your Free Project Quote</a>
-        <p class="arc-hero__small">Free and no-obligation. Just a few quick questions.</p>
+        <div class="arc-hero__copy">
+          <p class="arc-kicker arc-kicker--light">For homeowners and developers across London &amp; Essex</p>
+          <h1 class="arc-hero__h">Your renovation, built right. On time and on budget.</h1>
+          <p class="arc-hero__p">Extensions, loft conversions, full refurbishments and new builds, designed and built by one team.</p>
+        </div>
+        <div class="arc-hero__form" id="arc-quote" aria-labelledby="arc-quote-h">
+          <h2 id="arc-quote-h" class="arc-hero__formh">Book Your Free Project Quote</h2>
+          <p class="arc-hero__small">Free and no-obligation. Just a few quick questions.</p>
+          <div class="arc-hero__embed">
+            <!-- GHL form. main.js fills src so utm_* and click IDs reach hidden fields (add them in GHL with matching Query Keys). Set the form On Submit to open thank-you.html. -->
+            <iframe
+              data-src="https://api.leadconnectorhq.com/widget/form/bF9yv0FBoZBN5PYKfDrh"
+              style="width:100%;height:100%;border:none;border-radius:8px"
+              id="inline-bF9yv0FBoZBN5PYKfDrh"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Architronica landing page form"
+              data-height="786"
+              data-layout-iframe-id="inline-bF9yv0FBoZBN5PYKfDrh"
+              data-form-id="bF9yv0FBoZBN5PYKfDrh"
+              data-cookie-consent="true"
+              data-cookie-consent-provider="auto"
+              title="Architronica landing page form">
+            </iframe>
+            <noscript><iframe src="https://api.leadconnectorhq.com/widget/form/bF9yv0FBoZBN5PYKfDrh" style="width:100%;height:786px;border:none" title="Architronica landing page form"></iframe></noscript>
+          </div>
+          <p class="arc-hero__tel">Rather talk now? <a href="tel:+447300510004">07300 510004</a></p>
+        </div>
       </div>
       <ul class="arc-hero__bar" aria-label="Why homeowners choose us">
         <li><span class="arc-stars" aria-hidden="true">★★★★★</span> 5.0 on Google</li>
@@ -46,39 +74,6 @@
         <li>100+ projects handed over</li>
         <li>Design &amp; build in-house</li>
       </ul>
-    </section>
-
-    <!-- Quote form -->
-    <section class="arc-quote" id="arc-quote" aria-labelledby="arc-quote-h">
-      <div class="arc-quote__intro">
-        <p class="arc-kicker arc-kicker--light">Free project quote</p>
-        <h2 id="arc-quote-h" class="arc-h2 arc-h2--light">Tell us about your project</h2>
-        <p class="arc-quote__p">A few quick questions, then one of the team calls you to talk it through.</p>
-        <p class="arc-quote__tel">Rather talk now? <a href="tel:+447300510004">07300 510004</a></p>
-      </div>
-      <div class="arc-quote__form">
-        <!-- GHL form. main.js fills src so utm_* and click IDs reach hidden fields (add them in GHL with matching Query Keys). Set the form On Submit to open thank-you.html. -->
-        <iframe
-          data-src="https://api.leadconnectorhq.com/widget/form/bF9yv0FBoZBN5PYKfDrh"
-          style="width:100%;height:100%;border:none;border-radius:8px"
-          id="inline-bF9yv0FBoZBN5PYKfDrh"
-          data-layout="{'id':'INLINE'}"
-          data-trigger-type="alwaysShow"
-          data-trigger-value=""
-          data-activation-type="alwaysActivated"
-          data-activation-value=""
-          data-deactivation-type="neverDeactivate"
-          data-deactivation-value=""
-          data-form-name="Architronica landing page form"
-          data-height="786"
-          data-layout-iframe-id="inline-bF9yv0FBoZBN5PYKfDrh"
-          data-form-id="bF9yv0FBoZBN5PYKfDrh"
-          data-cookie-consent="true"
-          data-cookie-consent-provider="auto"
-          title="Architronica landing page form">
-        </iframe>
-        <noscript><iframe src="https://api.leadconnectorhq.com/widget/form/bF9yv0FBoZBN5PYKfDrh" style="width:100%;height:786px;border:none" title="Architronica landing page form"></iframe></noscript>
-      </div>
     </section>
 
     <!-- Work mosaic -->
