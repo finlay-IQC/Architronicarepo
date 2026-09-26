@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Architronica | Design &amp; Build Brochure</title>
+<meta name="description" content="Architronica: design and build extensions, full refurbishments, loft conversions and new builds across North, Northwest and West London, by our own in-house team.">
+<meta property="og:title" content="Architronica | Design &amp; Build Brochure">
+<meta property="og:description" content="Extensions, full refurbishments, loft conversions and new builds across North London. Projects from £60,000.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  @font-face{font-family:'Fraunces';src:url(brochure/web/fonts/fraunces-latin-500-normal.woff2) format('woff2');font-weight:500;font-style:normal}
+  @font-face{font-family:'Fraunces';src:url(brochure/web/fonts/fraunces-latin-600-normal.woff2) format('woff2');font-weight:600;font-style:normal}
+  @font-face{font-family:'Fraunces';src:url(brochure/web/fonts/fraunces-latin-400-italic.woff2) format('woff2');font-weight:400;font-style:italic}
+  @page { size: A4; margin: 0; }
+  :root{ --ink:#1e2124; --char:#2b2f33; --muted:#62666b; --bronze:#a47c4f; --stone:#efebe4; --line:#d9d3c8; --paper:#fbfaf7; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Poppins','Helvetica Neue',Arial,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:210mm;height:297mm;position:relative;overflow:hidden;background:var(--paper);page-break-after:always}
+  .page:last-child{page-break-after:auto}
+  .sans,h4,h5,.eyebrow,.foot,.stat,.tag,.from,.num,.area .c,.row span,.pill{font-family:'Poppins','Helvetica Neue',Arial,sans-serif}
+  h1,h2,h3,.ptitle,.contact .big{font-family:'Fraunces',Georgia,serif}
+  .eyebrow{font-size:7.5pt;letter-spacing:.34em;text-transform:uppercase;font-weight:500;color:var(--bronze)}
+  h2{font-weight:500;font-size:25pt;line-height:1.1;color:var(--ink);letter-spacing:-.01em}
+  h2 em{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:400;color:var(--bronze)}
+  p{font-size:9.3pt;line-height:1.6;color:var(--muted)}
+  .pad{padding:16mm 18mm}
+  .foot{position:absolute;left:18mm;right:18mm;bottom:9mm;display:flex;justify-content:space-between;font-size:7pt;color:var(--muted);letter-spacing:.08em;border-top:1px solid var(--line);padding-top:3mm}
+  .ph{background-size:cover;background-position:center;background-color:#ccc}
+  .rule{display:flex;align-items:center;gap:3mm;margin-top:4mm}
+  .rule i{flex:1;height:1px;background:var(--line)}
+  .ticks{height:3mm;background:repeating-linear-gradient(90deg,var(--line) 0 1px,transparent 1px 5mm)}
+
+  .wm{display:flex;align-items:center;gap:4mm}
+  .wm .m{width:11mm;height:11mm;border:1.2px solid var(--bronze);display:grid;place-items:center;font-family:'Poppins',sans-serif;font-weight:500;color:var(--bronze);font-size:12pt}
+  .wm .n{font-family:'Poppins',sans-serif;font-weight:500;letter-spacing:.32em;font-size:13pt;color:#fff}
+  .wm .s{font-family:'Poppins',sans-serif;font-size:6.5pt;letter-spacing:.3em;color:#c9c4bb;margin-top:1mm}
+
+  /* cover */
+  .cover{background:#1e2124;color:#fff}
+  .cover .hero{position:absolute;left:0;right:0;top:0;height:165mm}
+  .cover .top{position:absolute;left:18mm;right:18mm;top:14mm;display:flex;justify-content:space-between;align-items:center}
+  .cover .top .loc{font-family:'Poppins',sans-serif;font-size:7pt;letter-spacing:.3em;color:#e7e2d9}
+  .cover h1{position:absolute;left:18mm;right:18mm;top:118mm;font-weight:500;font-size:32pt;line-height:1.05;letter-spacing:-.015em}
+  .cover h1 em{font-family:'Fraunces',serif;font-style:italic;font-weight:400;color:#d2ab7c}
+  .cover .lede{position:absolute;left:18mm;width:120mm;top:170mm;color:#d4d0c8;font-size:10.5pt;line-height:1.55}
+  .pill{position:absolute;right:18mm;top:172mm;border:1px solid #d2ab7c;color:#d2ab7c;font-size:7pt;letter-spacing:.28em;padding:2.6mm 4mm;font-weight:500}
+  .cover .grid4{position:absolute;left:18mm;right:18mm;top:196mm;display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid #454a4f}
+  .cover .grid4 div{padding:4mm 5mm 4mm 0;border-bottom:1px solid #454a4f;font-size:9.4pt;line-height:1.45;color:#e9e6e0;display:flex;gap:3mm}
+  .cover .grid4 div:nth-child(even){padding-left:5mm;border-left:1px solid #454a4f}
+  .cover .grid4 b{font-family:'Poppins',sans-serif;color:#d2ab7c;font-weight:500;font-size:8pt}
+  .stats{position:absolute;left:0;right:0;bottom:0;height:30mm;background:var(--stone);display:grid;grid-template-columns:repeat(4,1fr);padding:0 18mm}
+  .stat{display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--line);padding-left:5mm}
+  .stat:first-child{border-left:0;padding-left:0}
+  .stat .v{font-size:13.5pt;font-weight:500;color:var(--ink)}
+  .stat .l{font-size:6.5pt;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:1mm}
+
+  /* about */
+  .split{display:grid;grid-template-columns:1fr 74mm;min-height:112mm}
+  .split .txt{padding:15mm 10mm 8mm 18mm}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:5mm;border:1px solid var(--line)}
+  .card{padding:5mm;border-left:1px solid var(--line);background:#fff}
+  .card:first-child{border-left:0}
+  .card .k{font-family:'Poppins',sans-serif;color:var(--bronze);font-size:8pt;letter-spacing:.2em}
+  .card h4{font-size:10.5pt;font-weight:500;margin:2.5mm 0 1.5mm}
+  .card p{font-size:8.7pt;line-height:1.5}
+  .area{display:grid;grid-template-columns:42mm 1fr;padding:2.3mm 0;border-bottom:1px solid var(--line)}
+  .area.first{border-top:1px solid var(--line)}
+  .area .c{font-size:7.5pt;letter-spacing:.2em;font-weight:500;color:var(--ink)}
+  .area .t{font-size:9.3pt;color:var(--muted)}
+
+  /* services */
+  .svc{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-top:5mm}
+  .svc>div{display:grid;grid-template-columns:34mm 1fr;border:1px solid var(--line);background:#fff}
+  .svc .img{min-height:36mm}
+  .svc .body{padding:4mm}
+  .tag{font-size:6.5pt;letter-spacing:.24em;color:var(--bronze);font-weight:500}
+  .svc h3{font-size:12pt;font-weight:500;margin:1.2mm 0 1.5mm;line-height:1.15}
+  .svc p{font-size:8.5pt;line-height:1.45}
+  .from{margin-top:2mm;font-size:7.5pt;font-weight:500;letter-spacing:.08em}
+  .step{display:grid;grid-template-columns:14mm 1fr;padding:2.6mm 0;border-bottom:1px solid var(--line)}
+  .step.first{border-top:1px solid var(--line)}
+  .num{font-size:9pt;color:var(--bronze);font-weight:500;letter-spacing:.1em;padding-top:.6mm}
+  .step h5{font-size:10pt;font-weight:500}
+  .step p{font-size:8.9pt;margin-top:.5mm;line-height:1.45}
+
+  /* portfolio */
+  .phead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:5mm;gap:8mm}
+  .ptitle{font-size:18pt;font-weight:500;margin-top:2mm;line-height:1.1}
+  .pdesc{font-size:9.2pt;margin-top:2mm;max-width:130mm}
+  .pno{font-family:'Poppins',sans-serif;font-size:34pt;font-weight:300;color:var(--line);line-height:.8}
+  .g{display:grid;gap:3mm}
+
+  /* cta */
+  .cta-top{position:relative;height:100mm;color:#fff}
+  .cta-top .in{position:absolute;left:18mm;right:18mm;bottom:12mm}
+  .cta-top h2{color:#fff;font-size:30pt;margin-top:3mm}
+  .cta-top h2 em{color:#d2ab7c}
+  .cta-top p{color:#dcd8d0;font-size:10pt;margin-top:4mm;max-width:165mm}
+  .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:10mm;padding:10mm 18mm 0}
+  .list{list-style:none;margin-top:3mm}
+  .list li{font-size:9.3pt;padding:2.3mm 0;border-bottom:1px solid var(--line);display:flex;gap:3mm;line-height:1.4;color:var(--ink)}
+  .list li::before{content:"";flex:0 0 4mm;height:1px;margin-top:2.6mm;background:var(--bronze)}
+  h3.sm{font-size:14pt;font-weight:500;margin-top:1.5mm}
+  .contact{margin:8mm 18mm 0;background:var(--stone);padding:7mm 9mm;display:grid;grid-template-columns:1fr 1fr;gap:8mm;align-items:center}
+  .contact .big{font-size:21pt;font-weight:500}
+  .contact .row{font-size:9.4pt;padding:1.3mm 0}
+  .contact .row span{display:inline-block;width:17mm;font-size:6.5pt;letter-spacing:.22em;color:var(--bronze);font-weight:500}
+  .closer{position:absolute;left:0;right:0;bottom:0;height:32mm;background:#1e2124;padding:0 18mm;display:flex;justify-content:space-between;align-items:center}
+</style>
+<style>
+  html,body{background:#dcd8d1}
+  body{padding-inline:16px;padding-block:24px}
+  .deck{display:flex;flex-direction:column;align-items:center;gap:20px}
+  .page{zoom:var(--z,1);box-shadow:0 6px 28px rgba(30,33,36,.2);flex:none}
+  .bar{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:20px;font-family:'Poppins','Helvetica Neue',Arial,sans-serif}
+  .bar a{text-decoration:none;font-weight:500;letter-spacing:.14em;font-size:12px;padding:12px 20px}
+  .bar .p{background:#1e2124;color:#fff}.bar .s{border:1px solid #1e2124;color:#1e2124;padding:11px 20px}
+  @media print{html,body{background:#fff;padding:0}.deck{gap:0}.page{zoom:1;box-shadow:none}.bar{display:none}}
+</style>
+<script>(function(){function fit(){var w=document.documentElement.clientWidth-32;document.documentElement.style.setProperty('--z',Math.min(1,w/794).toFixed(4));}fit();addEventListener('resize',fit);})();</script>
+</head>
+<body>
+<div class="bar"><a class="p" href="brochure/architronica-brochure.pdf" download>DOWNLOAD PDF</a><a class="s" href="tel:+447300510004">CALL 07300 510004</a></div>
+<main class="deck">
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="hero ph" style="background-image:url(brochure/web/cover.jpg)"></div>
+  <div class="top">
+    <div class="wm"><div class="m">A</div><div><div class="n">ARCHITRONICA</div><div class="s">DESIGN &amp; BUILD · NORTH LONDON</div></div></div>
+  </div>
+  <h1>Designed and built<br>by one team.<br><em>Across North London.</em></h1>
+  <p class="lede">Extensions, full refurbishments, loft conversions and new builds, delivered by our own in-house team. Projects from £60,000.</p>
+  <div class="pill">FREE SITE VISIT</div>
+  <div class="grid4">
+    <div><b>01</b>Design and build under one roof, from first drawings to handover</div>
+    <div><b>02</b>Our own in-house team on site, not a chain of subcontractors</div>
+    <div><b>03</b>Straight answers on cost and programme from the first conversation</div>
+    <div><b>04</b>Most of our work comes through architects and past clients</div>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="v">Design &amp; build</div><div class="l">One team</div></div>
+    <div class="stat"><div class="v">In-house</div><div class="l">Our own trades</div></div>
+    <div class="stat"><div class="v">N &amp; NW London</div><div class="l">Plus West London</div></div>
+    <div class="stat"><div class="v">£60k+</div><div class="l">Project range</div></div>
+  </div>
+</section>
+
+<!-- 2 ABOUT -->
+<section class="page">
+  <div class="split">
+    <div class="txt">
+      <div class="eyebrow">About Architronica</div>
+      <h2 style="margin-top:4mm;font-size:22pt">Straightforward. Quick.<br><em>Built properly.</em></h2>
+      <p style="margin-top:5mm">Architronica is a design and build company based in North London. We design, plan and build extensions, full refurbishments, loft conversions and new homes for homeowners and small developers.</p>
+      <p style="margin-top:3mm">Our own team carries out the work, so one company is responsible for the whole project. We're straightforward with people, we get projects finished quickly, and we build to a high standard at a fair price.</p>
+    </div>
+    <div class="ph" style="background-image:url(brochure/web/a02.jpg)"></div>
+  </div>
+  <div class="pad" style="padding-top:9mm">
+    <div class="eyebrow">What sets us apart</div>
+    <h2 style="font-size:19pt;margin-top:3mm">How we run a project.</h2>
+    <div class="cards">
+      <div class="card"><div class="k">DESIGN &amp; BUILD</div><h4>One team, start to finish</h4><p>Design, drawings and the build are handled by one company, so you're never chasing separate firms for answers.</p></div>
+      <div class="card"><div class="k">IN-HOUSE</div><h4>Our own trades</h4><p>We employ the people who build your project. That keeps quality consistent and the programme moving.</p></div>
+      <div class="card"><div class="k">STRAIGHT TALK</div><h4>Honest from day one</h4><p>Clear answers on cost, timing and what's possible, before you commit to anything.</p></div>
+    </div>
+    <div class="eyebrow" style="margin-top:8mm">Where we work</div>
+    <h2 style="font-size:19pt;margin:3mm 0 4mm">North, Northwest &amp; West London.</h2>
+    <div class="area first"><div class="c">NORTH LONDON</div><div class="t">Hampstead · St John's Wood · Muswell Hill · Crouch End · Islington · Hackney</div></div>
+    <div class="area"><div class="c">BARNET &amp; FINCHLEY</div><div class="t">Barnet · Finchley · East Finchley · Whetstone · Mill Hill · Cockfosters · Hadley Wood</div></div>
+    <div class="area"><div class="c">HERTS &amp; ESSEX BORDERS</div><div class="t">Potters Bar · Cuffley · Chigwell · Loughton</div></div>
+    <div class="area"><div class="c">WEST LONDON</div><div class="t">Notting Hill · Kensington · Ealing · Chiswick · Wembley · Willesden</div></div>
+  </div>
+  <div class="foot"><span>architronica.co.uk · info@architronica.co.uk</span><span>02</span></div>
+</section>
+
+<!-- 3 SERVICES + PROCESS -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">What we build</div>
+    <h2 style="margin-top:3mm">Four ways to <em>more space.</em></h2>
+    <div class="svc">
+      <div><div class="img ph" style="background-image:url(brochure/web/a13.jpg)"></div><div class="body"><div class="tag">EXTENSIONS</div><h3>Rear, side &amp; wrap-around</h3><p>Open-plan kitchen and living space, designed and built as one project.</p><div class="from">FROM £60,000</div></div></div>
+      <div><div class="img ph" style="background-image:url(brochure/web/a05.jpg)"></div><div class="body"><div class="tag">FULL REFURBISHMENT</div><h3>Whole-home renovation</h3><p>Kitchens, bathrooms, layouts and finishes, taken back and rebuilt properly.</p><div class="from">FROM £60,000</div></div></div>
+      <div><div class="img ph" style="background-image:url(brochure/web/a03.jpg)"></div><div class="body"><div class="tag">LOFT CONVERSIONS</div><h3>A new floor, finished</h3><p>Dormer conversions with bedrooms and shower rooms, from structure to finishes.</p></div></div>
+      <div><div class="img ph" style="background-image:url(brochure/web/a07.jpg)"></div><div class="body"><div class="tag">NEW BUILDS</div><h3>New homes &amp; developments</h3><p>New houses for owners and small developers, delivered from groundworks up.</p></div></div>
+    </div>
+    <div class="eyebrow" style="margin-top:9mm">How we work</div>
+    <h2 style="font-size:19pt;margin:3mm 0 4mm">From first call to handover.</h2>
+    <div class="step first"><div class="num">01</div><div><h5>Free consultation</h5><p>A call to talk through your project, what you want to achieve, your budget and your timeline.</p></div></div>
+    <div class="step"><div class="num">02</div><div><h5>Site visit</h5><p>We visit your property, look at the building and the space, and talk through what's possible.</p></div></div>
+    <div class="step"><div class="num">03</div><div><h5>Design &amp; approvals</h5><p>We produce the design and drawings, and take care of planning and building regulations.</p></div></div>
+    <div class="step"><div class="num">04</div><div><h5>Written quote &amp; programme</h5><p>A clear written quote and start date before any work is agreed.</p></div></div>
+    <div class="step"><div class="num">05</div><div><h5>The build</h5><p>Our in-house team builds the project, with one point of contact from start to handover.</p></div></div>
+  </div>
+  <div class="foot"><span>architronica.co.uk · info@architronica.co.uk</span><span>03</span></div>
+</section>
+
+<!-- 4 PORTFOLIO: KITCHENS -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">Portfolio</div>
+    <h2 style="margin-top:3mm;margin-bottom:7mm">Recent work.</h2>
+    <div class="phead"><div><div class="eyebrow" style="font-size:6.8pt">Extensions &amp; kitchens</div><div class="ptitle">Open-plan living</div><p class="pdesc">Kitchen extensions with roof lights, steel-framed glazing and herringbone floors, and handleless kitchens with stone islands.</p></div><div class="pno">01</div></div>
+    <div class="g" style="grid-template-columns:1fr 1.5fr;grid-template-rows:64mm 64mm">
+      <div class="ph" style="grid-row:span 2;background-image:url(brochure/web/a13.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/a02.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/a05.jpg)"></div>
+    </div>
+    <div class="g" style="grid-template-columns:1fr;grid-template-rows:52mm;margin-top:3mm">
+      <div class="ph" style="background-image:url(brochure/web/a10.jpg)"></div>
+    </div>
+  </div>
+  <div class="foot"><span>architronica.co.uk · info@architronica.co.uk</span><span>04</span></div>
+</section>
+
+<!-- 5 PORTFOLIO: LOFTS & BATHROOMS -->
+<section class="page">
+  <div class="pad">
+    <div class="phead"><div><div class="eyebrow" style="font-size:6.8pt">Loft conversions</div><div class="ptitle">A new floor, finished</div><p class="pdesc">Full-width dormer conversion with a new rear roof, and a loft shower room under the eaves with a roof light.</p></div><div class="pno">02</div></div>
+    <div class="g" style="grid-template-columns:1.5fr 1fr;grid-template-rows:98mm">
+      <div class="ph" style="background-image:url(brochure/web/a03.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/a12.jpg)"></div>
+    </div>
+    <div class="phead" style="margin-top:9mm"><div><div class="eyebrow" style="font-size:6.8pt">Bathrooms</div><div class="ptitle">Bathrooms &amp; shower rooms</div><p class="pdesc">Large-format tiling, wall-hung sanitaryware, recessed shelving with lighting and floating vanities.</p></div><div class="pno">03</div></div>
+    <div class="g" style="grid-template-columns:repeat(4,1fr);grid-template-rows:76mm">
+      <div class="ph" style="background-image:url(brochure/web/a04.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/a06.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/a11.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/a08.jpg)"></div>
+    </div>
+  </div>
+  <div class="foot"><span>architronica.co.uk · info@architronica.co.uk</span><span>05</span></div>
+</section>
+
+<!-- 6 PORTFOLIO: ON SITE -->
+<section class="page">
+  <div class="pad">
+    <div class="phead"><div><div class="eyebrow" style="font-size:6.8pt">New builds &amp; on site</div><div class="ptitle">Built properly, stage by stage</div><p class="pdesc">New homes from groundworks up, and extensions at structure stage. This is the part most people never see: steelwork, roof structure and brickwork done right before a single finish goes on.</p></div><div class="pno">04</div></div>
+    <div class="g" style="grid-template-columns:1.4fr 1fr;grid-template-rows:92mm">
+      <div class="ph" style="background-image:url(brochure/web/a01.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/a07.jpg)"></div>
+    </div>
+    <div class="g" style="grid-template-columns:1fr 1fr;grid-template-rows:80mm;margin-top:3mm">
+      <div class="ph" style="background-image:url(brochure/web/a09.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/a14.jpg)"></div>
+    </div>
+    <div class="rule"><span class="eyebrow" style="font-size:6.5pt">Our own team on every stage</span><i></i></div>
+  </div>
+  <div class="foot"><span>architronica.co.uk · info@architronica.co.uk</span><span>06</span></div>
+</section>
+
+<!-- 7 CTA -->
+<section class="page">
+  <div class="cta-top ph" style="background-image:url(brochure/web/cta.jpg)">
+    <div class="in">
+      <div class="eyebrow" style="color:#d2ab7c">No obligation · No cost · No sales pitch</div>
+      <h2>Book your <em>free consultation.</em></h2>
+      <p>Tell us what you want to build. We'll give you a straight answer on what's possible, roughly what it costs and how long it takes, from the people who would actually build it.</p>
+    </div>
+  </div>
+  <div class="cta-grid">
+    <div>
+      <div class="eyebrow">What happens next</div>
+      <h3 class="sm">After you get in touch.</h3>
+      <ul class="list">
+        <li>We call you back to talk through your project</li>
+        <li>If it's a fit, we arrange a visit to your property</li>
+        <li>We take care of the design and approvals</li>
+        <li>You get a clear written quote before anything is agreed</li>
+        <li>No pressure and no lock-in</li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">Is your project a fit?</div>
+      <h3 class="sm">We work on projects from £60,000.</h3>
+      <ul class="list">
+        <li>Extension, full refurbishment, loft conversion or new build</li>
+        <li>Project value of £60,000 or more</li>
+        <li>In North, Northwest or West London, or the Herts and Essex borders</li>
+        <li>Homeowner or small developer</li>
+        <li>You want one company to design and build it</li>
+      </ul>
+    </div>
+  </div>
+  <div class="contact">
+    <div><div class="eyebrow">Get in touch</div><div class="big" style="margin-top:2mm">07300 510004</div><p style="margin-top:1.5mm;font-size:9pt">Speak to the team about your project.</p></div>
+    <div>
+      <div class="row"><span>EMAIL</span>info@architronica.co.uk</div>
+      <div class="row"><span>WEB</span>architronica.co.uk</div>
+      <div class="row"><span>SOCIAL</span>@architronicaltd</div>
+    </div>
+  </div>
+  <div class="closer">
+    <div class="wm"><div class="m">A</div><div><div class="n">ARCHITRONICA</div><div class="s">DESIGN &amp; BUILD · NORTH LONDON</div></div></div>
+    <div class="sans" style="color:#9ea2a6;font-size:7pt;text-align:right;line-height:1.7;letter-spacing:.06em">Architronica Ltd<br>architronica.co.uk · 07300 510004</div>
+  </div>
+</section>
+</main>
+</body>
+</html>
