@@ -9,23 +9,59 @@
   <meta name="theme-color" content="#111111">
   <link rel="stylesheet" href="styles.css">
 
-  <!-- TRACKING HEAD CODES GO HERE: Meta Pixel, GA4, GTM Head, TikTok, etc. -->
+  <!-- TRACKING HEAD CODES GO HERE: GA4, GTM Head, TikTok, etc. -->
   <!-- [GTM HEAD] -->
   <!-- [OTHER TRACKING] -->
 
-  <!-- CONVERSION EVENT GOES HERE: Fire Meta Schedule event, Google Ads conversion, etc. -->
-  <!--
-    Examples (uncomment once the base codes above are installed):
-    <script>
-      if (window.fbq) fbq('track', 'Schedule');
-      if (window.gtag) gtag('event', 'conversion', { send_to: 'AW-XXXXXXXXX/XXXXXXXXXXXX' });
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'quote_form_complete' });
-    </script>
-  -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2964492340409546');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+
+  <!-- CONVERSION EVENT: Meta Lead for a landing page form submission.
+       GHL redirects here after a successful submit. Fires once per session, and only when
+       the visitor used the form on the landing page (main.js sets arc_form_started) or
+       arrived from the landing page, so direct visits and refreshes are not counted. -->
+  <script>
+  (function () {
+    var started = null, fired = null;
+    try {
+      started = sessionStorage.getItem('arc_form_started');
+      fired = sessionStorage.getItem('arc_lead_fired');
+    } catch (e) { /* storage unavailable */ }
+    var fromSite = false;
+    try {
+      var ref = new URL(document.referrer);
+      fromSite = ref.host === location.host && (ref.pathname === '/' || /\/landing\.html$/.test(ref.pathname));
+    } catch (e) { /* no or invalid referrer */ }
+    if (fired || !(started || fromSite)) return;
+    var eventId = 'lead_' + Date.now() + '_' + Math.random().toString(36).slice(2, 10);
+    fbq('track', 'Lead', { content_name: 'Architronica landing page form' }, { eventID: eventId });
+    try {
+      sessionStorage.setItem('arc_lead_fired', eventId);
+      sessionStorage.removeItem('arc_form_started');
+    } catch (e) {}
+  })();
+  </script>
+  <!-- Other conversions (Google Ads, GTM dataLayer) can go here, e.g.
+       if (window.gtag) gtag('event', 'conversion', { send_to: 'AW-XXXXXXXXX/XXXXXXXXXXXX' }); -->
 </head>
 <body>
   <!-- TRACKING BODY CODES GO HERE: GTM Body noscript, etc. -->
+  <!-- Meta Pixel noscript fallback -->
+  <noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=2964492340409546&ev=PageView&noscript=1"
+  /></noscript>
   <!-- [GTM BODY] -->
 
   <header class="topbar">

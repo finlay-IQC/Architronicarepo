@@ -24,6 +24,16 @@
   // Load the GHL form with attribution in its URL; GHL maps matching query keys to hidden fields.
   document.querySelectorAll('iframe[data-src]').forEach(function (f) { f.src = tag(f.getAttribute('data-src')); });
 
+  // Mark the session once the visitor clicks or taps into the form (focus moves into the
+  // iframe, so this window blurs). thank-you.html only fires the Meta Lead event if this
+  // mark exists, so direct visits to the thank-you URL are not counted as leads.
+  window.addEventListener('blur', function () {
+    var el = document.activeElement;
+    if (el && el.tagName === 'IFRAME' && el.id === 'inline-bF9yv0FBoZBN5PYKfDrh') {
+      try { sessionStorage.setItem('arc_form_started', String(Date.now())); } catch (e) { /* storage unavailable */ }
+    }
+  });
+
   // Floating CTA: visible once the hero is gone, hidden while the form is in view.
   var float = document.querySelector('[data-arc-float]');
   var hero = document.querySelector('.arc-hero');
